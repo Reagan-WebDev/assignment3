@@ -8,25 +8,26 @@
 <body>
     <section>
         <h1>Registration Form</h1>
+        <form action="" method="post">
             <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname"><br><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
         
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password" required><br><br>
 
             <p>Select Gender: </p>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female" required>
             <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
+            <input type="radio" id="other" name="gender" value="other" required>
             <label for="other">Other</label><br><br>
 
             <label for="courses">Choose a course: </label>
-            <select id="courses" name="courses">
+            <select id="courses" name="courses" required>
                 <option value="course1">Bachelor of Education</option>
                 <option value="course2">Bachelor of Science in Mathematics</option>
                 <option value="course3">Bachelor of Science in Computer Science</option>
@@ -34,9 +35,7 @@
 
             <br><br>
             <input type="submit" value="Submit">
-
-
-
+        </form>
     </section>
 </body>
 </html>
